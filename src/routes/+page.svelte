@@ -3,9 +3,9 @@
  
   let token = ""
   let verify_result
-  function get_token(token) {
-    console.log("get_token called", token)
-    token= token
+  function get_token(input) {
+    console.log("get_token called", input)
+    token= input
   }
   get_token()
   if (browser) {
