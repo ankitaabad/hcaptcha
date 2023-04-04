@@ -1,4 +1,6 @@
 <script>
+	import { browser } from "$app/environment";
+ 
   let token = ""
   let verify_result
   function get_token(token) {
@@ -6,6 +8,9 @@
     token= token
   }
   get_token()
+  if (browser) {
+    window.get_token = get_token;
+  }
   function verify() {
     console.log("inside verify");
     var details ={response:token,secret:"0x1f8a561c3901f0388dff37FE25B861363660AB2e"}
