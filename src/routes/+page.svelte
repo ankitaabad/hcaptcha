@@ -25,6 +25,7 @@
       
       fetch("https://hcaptcha.com/siteverify", {
         method: "POST",
+        mode: "cors",
         headers: {
           "Content-Type": "application/x-www-form-urlencoded"
         },
