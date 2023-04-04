@@ -5,6 +5,7 @@
     console.log("get_token called", token)
     token= token
   }
+  get_token()
   function verify() {
     console.log("inside verify");
     var details ={response:token,secret:"0x1f8a561c3901f0388dff37FE25B861363660AB2e"}
