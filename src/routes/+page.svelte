@@ -2,10 +2,14 @@
 	import { browser } from "$app/environment";
  
   let token = ""
+  let copied = false
   let verify_result
   function get_token(input) {
     console.log("get_token called", input)
     token= input
+    navigator.clipboard.writeText(token).then(() => {
+      copied = true
+    })
   }
   get_token()
   if (browser) {
@@ -67,7 +71,8 @@
 			data-callback="get_token"
 		/>
 		<div>token: {token}</div>
-    <div>verify_result: {verify_result}</div>
+    <div class:visually-hidden={copied}> copied</div>
+    <!-- <div>verify_result: {verify_result}</div> -->
 		<input type="submit" class="btn btn-primary" value="Submit" on:click={() => verify()} />
 	</form>
 </div>
