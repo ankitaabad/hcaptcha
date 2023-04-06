@@ -2,13 +2,13 @@
 	import { browser } from "$app/environment";
  
   let token = ""
-  let copied = false
+  let copied = true
   let verify_result
   function get_token(input) {
     console.log("get_token called", input)
     token= input
     navigator.clipboard.writeText(token).then(() => {
-      copied = true
+      copied = false
     })
   }
   get_token()
@@ -43,23 +43,21 @@
 
 </script>
 
-<svelte:head>
-	<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
-</svelte:head>
+
 <div class="container-md w-25 mt-4">
 	<form>
-		<div class="mb-3">
-			<label for="exampleInputEmail1" class="form-label">Email address</label>
-			<input
-				type="email"
-				class="form-control"
-				id="exampleInputEmail1"
-				aria-describedby="emailHelp"
+		<div class="form-outline mb-3">
+      <input
+      type="email"
+      class="form-control"
+      id="exampleInputEmail1"
+      aria-describedby="emailHelp"
 			/>
+			<label for="exampleInputEmail1" class="form-label">Email address</label>
 		</div>
-		<div class="mb-3">
+		<div class="form-outline mb-3">
+      <input type="password" class="form-control" id="exampleInputPassword1" />
 			<label for="exampleInputPassword1" class="form-label">Password</label>
-			<input type="password" class="form-control" id="exampleInputPassword1" />
 		</div>
 		<div class="mb-3 form-check">
 			<input type="checkbox" class="form-check-input" id="exampleCheck1" />
@@ -75,4 +73,6 @@
     <!-- <div>verify_result: {verify_result}</div> -->
 		<input type="submit" class="btn btn-primary" value="Submit" on:click={() => verify()} />
 	</form>
+
+
 </div>
