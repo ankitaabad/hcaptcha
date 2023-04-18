@@ -1,5 +1,7 @@
 <svelte:head>
 	<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+
 	<script
 		type="text/javascript"
 		src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"
