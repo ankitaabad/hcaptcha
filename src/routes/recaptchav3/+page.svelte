@@ -18,7 +18,9 @@
   
 
 </script>
-
+<svelte:head>
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+</svelte:head>
 
 <div class="container-md w-25 mt-4">
 	<form bind:this={form}>

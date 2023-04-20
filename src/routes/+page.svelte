@@ -43,7 +43,9 @@
 
 </script>
 
-
+<svelte:head>
+  	<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+</svelte:head>
 <div class="container-md w-25 mt-4">
 	<form>
 		<div class="form-outline mb-3">

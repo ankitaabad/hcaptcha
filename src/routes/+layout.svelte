@@ -1,6 +1,5 @@
 <svelte:head>
-	<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
-  <script src="https://www.google.com/recaptcha/api.js"></script>
+
 
 	<script
 		type="text/javascript"
@@ -66,4 +65,5 @@
   <!-- Container wrapper -->
 </nav>
 <!-- Navbar -->
+
 <slot />

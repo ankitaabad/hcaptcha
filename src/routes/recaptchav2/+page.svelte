@@ -18,7 +18,9 @@
   
 
 </script>
-
+<svelte:head>
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+</svelte:head>
 
 <div class="container-md w-25 mt-4">
 	<form bind:this={form}>
@@ -41,7 +43,7 @@
     <div class:visually-hidden={copied}> copied</div>
     <!-- <div>verify_result: {verify_result}</div> -->
     <div class="g-recaptcha btn btn-primary" 
-    data-sitekey="6LcCHI0iAAAAAH_-L_BW49nb1CuPiuLAzg8UIGbo" 
+    data-sitekey="6LcCHI0iAAAAAH_-L_BW49nb1CuPiuLAzg8UIGbo" data-callback="onSubmit"
    
     ></div>
     <input class="btn btn-primary" type="submit" value="submit"/>
