@@ -48,10 +48,10 @@
           <a class="nav-link" href="/">Hcaptcha</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="recaptchav3">Recaptcha V3</a>
+          <a class="nav-link" href="/recaptchav3">Recaptcha V3</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="recaptchav2">Recaptcha V2</a>
+          <a class="nav-link" href="/recaptchav2">Recaptcha V2</a>
         </li>
       </ul>
       <!-- Left links -->

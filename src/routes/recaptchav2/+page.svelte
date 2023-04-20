@@ -23,6 +23,8 @@
 </svelte:head>
 
 <div class="container-md w-25 mt-4">
+  <div>Recaptcha V2</div>
+
 	<form bind:this={form}>
 		<div class="form-outline mb-3">
       <input
