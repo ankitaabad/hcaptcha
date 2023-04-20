@@ -40,10 +40,11 @@
 		<div>token: {token}</div>
     <div class:visually-hidden={copied}> copied</div>
     <!-- <div>verify_result: {verify_result}</div> -->
-    <button class="g-recaptcha btn btn-primary" 
+    <div class="g-recaptcha btn btn-primary" 
     data-sitekey="6LcCHI0iAAAAAH_-L_BW49nb1CuPiuLAzg8UIGbo" 
-    data-callback='onSubmit' 
-    data-action='submit'>Submit</button>
+   
+    ></div>
+    <input class="btn btn-primary" type="submit" value="submit"/>
 
 	</form>
 
