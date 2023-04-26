@@ -71,6 +71,7 @@
 			class="h-captcha"
 			data-sitekey="5ce20e4e-a36c-43c9-8ee4-bd63ad94d8c7"
 			data-callback="get_token"
+      data-size="invisible"
 		/>
 		<div>token: {token}</div>
     <div class:visually-hidden={copied}> copied</div>
